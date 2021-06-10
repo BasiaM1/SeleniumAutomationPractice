@@ -1,0 +1,10 @@
+54369 [main] DEBUG WaitTypes.class - Element not clicked on the web page
+54411 [main] DEBUG BasePage.class - CLicking button: 
+54423 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: <<<<<<<<<<<
+54488 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
+54488 [main] DEBUG WaitTypes.class - Waiting for max: 20 seconds for element to be available
+54564 [main] DEBUG WaitTypes.class - Element clicked on the web page
+54624 [main] DEBUG BasePage.class - CLicking button: Register
+54636 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: Register<<<<<<<<<<<
+68241 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
+68877 [main] DEBUG TestBase.class - Driver closed
