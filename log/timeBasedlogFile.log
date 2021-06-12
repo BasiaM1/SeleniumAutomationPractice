@@ -1,10 +1,30 @@
-54369 [main] DEBUG WaitTypes.class - Element not clicked on the web page
-54411 [main] DEBUG BasePage.class - CLicking button: 
-54423 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: <<<<<<<<<<<
-54488 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
-54488 [main] DEBUG WaitTypes.class - Waiting for max: 20 seconds for element to be available
-54564 [main] DEBUG WaitTypes.class - Element clicked on the web page
-54624 [main] DEBUG BasePage.class - CLicking button: Register
-54636 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: Register<<<<<<<<<<<
-68241 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
-68877 [main] DEBUG TestBase.class - Driver closed
+23204 [main] DEBUG WaitTypes.class - page is available
+23243 [main] DEBUG WaitTypes.class - Element appeared on the web page
+23244 [main] DEBUG BasePage.class - Sending text: yygdPc
+23395 [main] DEBUG WaitTypes.class - Element appeared on the web page
+23395 [main] DEBUG BasePage.class - Sending text: EIyADQtcLl
+23552 [main] DEBUG WaitTypes.class - Element appeared on the web page
+23552 [main] DEBUG BasePage.class - Sending text: e9aCdmm1
+23676 [main] DEBUG WaitTypes.class - Element appeared on the web page
+23677 [main] DEBUG BasePage.class - Sending text: NxBkzjjW
+23864 [main] DEBUG WaitTypes.class - Element appeared on the web page
+23865 [main] DEBUG BasePage.class - Sending text: mqqNZ
+24104 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: Alabama<<<<<<<<<<<
+24126 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
+24177 [main] DEBUG WaitTypes.class - Element appeared on the web page
+24177 [main] DEBUG BasePage.class - Sending text: 82784
+24472 [main] DEBUG WaitTypes.class - Element appeared on the web page
+24473 [main] DEBUG BasePage.class - Sending text: 464246
+24648 [main] DEBUG WaitTypes.class - Element appeared on the web page
+24648 [main] DEBUG BasePage.class - Sending text: nHydP
+24757 [main] DEBUG WaitTypes.class - Waiting for max: 15 seconds for element to be available
+40122 [main] DEBUG WaitTypes.class - Element not clicked on the web page
+40163 [main] DEBUG BasePage.class - CLicking button: 
+40178 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: <<<<<<<<<<<
+40205 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
+40205 [main] DEBUG WaitTypes.class - Waiting for max: 15 seconds for element to be available
+40294 [main] DEBUG WaitTypes.class - Element clicked on the web page
+40321 [main] DEBUG BasePage.class - CLicking button: Register
+40345 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: Register<<<<<<<<<<<
+50078 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
+50700 [main] DEBUG TestBase.class - Driver closed

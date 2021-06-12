@@ -2,11 +2,11 @@ package providers;
 
 import models.Gender;
 import models.User;
-
+import models.User.UserBuilder;
 public class UserFactory {
 
     public User getAlreadyRegisteredUser() {
-        return new User.Builder()
+        return new UserBuilder()
                 .email("abcdtest@wp.pl")
                 .gender(Gender.FEMALE)
                 .firstName("Anna")

@@ -14,7 +14,8 @@ public enum PropertyStore {
     BROWSER_IMPLICIT_TIMEOUT("browser.implicit.timeout"),
     BROWSER_HEADLESS("browser.headless"),
     BROWSER_ATTACH_SCREENSHOT("browser.attachscreenshot"),
-    ENVIRONMENT("environment");
+    ENVIRONMENT("environment"),
+    BROWSER_EXPLICIT_CLICK("explicit.Click");
 
     private String value;
     private String propertyKey;

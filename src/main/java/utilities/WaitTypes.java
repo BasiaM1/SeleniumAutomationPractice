@@ -57,7 +57,7 @@ public class WaitTypes {
         return element;
     }
 
-    public WebElement getReadyClickBtn(WebDriver driver, WebElement element, long timeout) {
+    public WebElement getReadyClickBtn(WebDriver driver, WebElement element, int timeout) {
 
         try {
             logger.debug("Waiting for max: " + timeout + " seconds for element to be available");

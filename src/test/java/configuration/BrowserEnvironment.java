@@ -21,6 +21,7 @@ public class BrowserEnvironment {
     private boolean headlessBrowser;
     private int webElementTimeOut;
     private int webBrowserImplicitTimeOut;
+    private int webBrowserExplicitClick;
     private boolean attachScreenShot;
     private Logger logger;
     private WebDriver webDriver;//glowny
@@ -45,6 +46,7 @@ public class BrowserEnvironment {
         this.webBrowserImplicitTimeOut = PropertyStore.BROWSER_IMPLICIT_TIMEOUT.isSpecified() ? PropertyStore.BROWSER_IMPLICIT_TIMEOUT.getIntValue() : this.webBrowserImplicitTimeOut;
         this.attachScreenShot = PropertyStore.BROWSER_ATTACH_SCREENSHOT.isSpecified() ? PropertyStore.BROWSER_ATTACH_SCREENSHOT.getBoolean() : this.attachScreenShot;
         this.headlessBrowser = PropertyStore.BROWSER_HEADLESS.getBoolean();
+        this.webBrowserExplicitClick = PropertyStore.BROWSER_EXPLICIT_CLICK.isSpecified() ? PropertyStore.BROWSER_EXPLICIT_CLICK.getIntValue() : this.webBrowserExplicitClick;
     }
 
     public WebDriver getDriver() {

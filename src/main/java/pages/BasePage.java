@@ -18,6 +18,7 @@ public class BasePage {
     protected WebListener weblistener;
     public WaitTypes wt;
 
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
         wt = new WaitTypes(driver);
@@ -31,14 +32,14 @@ public class BasePage {
     }
 
     public void sendKeys(WebElement element, String text) {
-        wt.waitForElement(driver,element, 15);
+        wt.waitForElement(driver,element, Integer.parseInt(System.getProperty("explicitWait")));
         logger.debug("Sending text: " + text);
         element.clear();
         element.sendKeys(text);
     }
 
     public void click(WebElement element) {
-        wt.getReadyClickBtn(driver, element, 20);
+        wt.getReadyClickBtn(driver, element,15);
         logger.debug("CLicking button: " + element.getText());
         element.click();
     }
