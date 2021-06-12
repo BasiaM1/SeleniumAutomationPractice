@@ -31,7 +31,7 @@ public class RegistrationTest extends TestBase {
     public void shouldHoverMouseOnElement(){
      homePage.getMenu()
              .mouseHoverWoman()
-                .mouseHoverDress()
-                .mouseHoverTshirt();
+             .mouseHoverDress()
+             .mouseHoverTshirt();
     }
 }

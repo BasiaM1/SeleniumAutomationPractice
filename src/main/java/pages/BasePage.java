@@ -11,6 +11,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utilities.WaitTypes;
 
+import java.util.List;
+import java.util.Random;
+
 public class BasePage {
     private WebDriver driver;
     private static Logger logger = LoggerFactory.getLogger("BasePage.class");
@@ -59,5 +62,9 @@ public class BasePage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public WebElement getRandomElement(List<WebElement>elements){
+        return  elements.get(new Random().nextInt(elements.size()));
     }
 }

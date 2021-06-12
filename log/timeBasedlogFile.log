@@ -1,30 +1,25 @@
-23204 [main] DEBUG WaitTypes.class - page is available
-23243 [main] DEBUG WaitTypes.class - Element appeared on the web page
-23244 [main] DEBUG BasePage.class - Sending text: yygdPc
-23395 [main] DEBUG WaitTypes.class - Element appeared on the web page
-23395 [main] DEBUG BasePage.class - Sending text: EIyADQtcLl
-23552 [main] DEBUG WaitTypes.class - Element appeared on the web page
-23552 [main] DEBUG BasePage.class - Sending text: e9aCdmm1
-23676 [main] DEBUG WaitTypes.class - Element appeared on the web page
-23677 [main] DEBUG BasePage.class - Sending text: NxBkzjjW
-23864 [main] DEBUG WaitTypes.class - Element appeared on the web page
-23865 [main] DEBUG BasePage.class - Sending text: mqqNZ
-24104 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: Alabama<<<<<<<<<<<
-24126 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
-24177 [main] DEBUG WaitTypes.class - Element appeared on the web page
-24177 [main] DEBUG BasePage.class - Sending text: 82784
-24472 [main] DEBUG WaitTypes.class - Element appeared on the web page
-24473 [main] DEBUG BasePage.class - Sending text: 464246
-24648 [main] DEBUG WaitTypes.class - Element appeared on the web page
-24648 [main] DEBUG BasePage.class - Sending text: nHydP
-24757 [main] DEBUG WaitTypes.class - Waiting for max: 15 seconds for element to be available
-40122 [main] DEBUG WaitTypes.class - Element not clicked on the web page
-40163 [main] DEBUG BasePage.class - CLicking button: 
-40178 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: <<<<<<<<<<<
-40205 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
-40205 [main] DEBUG WaitTypes.class - Waiting for max: 15 seconds for element to be available
-40294 [main] DEBUG WaitTypes.class - Element clicked on the web page
-40321 [main] DEBUG BasePage.class - CLicking button: Register
-40345 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: Register<<<<<<<<<<<
-50078 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
-50700 [main] DEBUG TestBase.class - Driver closed
+196 [main] DEBUG configuration.EnvironmentProperty - >>>>>>> Environment name: env_int
+205 [main] DEBUG configuration.EnvironmentProperty - #### Loading property from uri file:/C:/Java/SeleniumAutomationPractice/target/classes/env_int
+209 [main] DEBUG configuration.EnvironmentProperty - ****Loading environment property env_name = env_int 
+209 [main] DEBUG configuration.EnvironmentProperty - ****Loading environment property appUrl = http://automationpractice.com/index.php 
+209 [main] DEBUG configuration.EnvironmentProperty - ****Loading environment property explicitWait = 15 
+211 [main] DEBUG configuration.EnvironmentProperty - #### Properties loaded from env_int : 3
+672 [main] DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=91 in cache (valid until 23:17:50 12/06/2021 CEST)
+672 [main] DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome91=91.0.4472.101 in cache (valid until 19:33:38 13/06/2021 CEST)
+672 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+677 [main] TRACE i.g.b.wdm.cache.CacheHandler - Checking if chromedriver exists in cache
+687 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by chromedriver -- input list [C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe, C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe, C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.19\chromedriver.exe, C:\Users\bmurzynowska\.cache\selenium\resolution.properties] -- output list [C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe, C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe, C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.19\chromedriver.exe] 
+687 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by 91.0.4472.101 -- input list [C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe, C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe, C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.19\chromedriver.exe] -- output list [C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe] 
+687 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by WIN -- input list [C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe] -- output list [C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe] 
+687 [main] DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 91.0.4472.101 found in cache
+687 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\bmurzynowska\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+2016 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before navigate: Navigate to page: http://automationpractice.com/index.php<<<<<<<<<<<
+7053 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After navigate: Navigate to page: http://automationpractice.com/index.php<<<<<<<<<<<
+7053 [main] DEBUG TestBase.class - Driver initialized
+7074 [main] DEBUG TestBase.class - create object homePage
+7198 [main] DEBUG WaitTypes.class - Waiting for max: 15 seconds for element to be available
+7272 [main] DEBUG WaitTypes.class - Element clicked on the web page
+7286 [main] DEBUG BasePage.class - CLicking button: Printed Summer Dress
+7301 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>Before click: Clicking on element: Printed Summer Dress<<<<<<<<<<<
+9668 [main] INFO  WebListener.class - >>>>>>>>>>>>>>>>>>>After click: Clicking on element: <<<<<<<<<<<
+10387 [main] DEBUG TestBase.class - Driver closed
