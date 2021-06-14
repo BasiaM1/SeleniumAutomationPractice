@@ -5,3 +5,4 @@
 <b>TESTS:</b> </br>
 - Login
 - Register
+- select random product
