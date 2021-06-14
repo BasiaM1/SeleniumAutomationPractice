@@ -16,10 +16,12 @@ public class ProductDetailsPage extends BasePage {
     private WebElement price;
 
     public String getProductName() {
+        wt.waitForElement(getDriver(), price, 10);
         return name.getText();
     }
 
     public String getProductPrice() {
+        wt.waitForElement(getDriver(), name, 15);
         return price.getText();
     }
 //page object zamienia na model

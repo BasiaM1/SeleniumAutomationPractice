@@ -60,10 +60,7 @@ public class RegistrationPage extends BasePage {
     @FindBy(css="#submitAccount")
     WebElement registerBtn;
 
-
-
-
-    public void registerUser(User user) throws InterruptedException {
+    public void registerUser(User user) {
 
         sendKeys(firstNameInput, user.getFirstName());
         sendKeys(lastNameInput, user.getLastName());

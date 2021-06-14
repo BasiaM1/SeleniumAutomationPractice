@@ -27,6 +27,7 @@ public class BasePage {
         wt = new WaitTypes(driver);
         PageFactory.initElements(driver, this);
 
+
     }
 
 
