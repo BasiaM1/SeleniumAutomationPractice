@@ -3,10 +3,11 @@ package providers;
 import models.Gender;
 import models.User;
 
+
 public class UserFactory {
 
     public User getAlreadyRegisteredUser() {
-        return new User.Builder()
+        return User.builder()
                 .email("abcdtest@wp.pl")
                 .gender(Gender.FEMALE)
                 .firstName("Anna")
@@ -25,7 +26,7 @@ public class UserFactory {
     public User getRandomUser() {
         RandomStringGenerator rnd = new RandomStringGenerator();
 
-        return new User.Builder()
+        return User.builder()
                 .email(rnd.getRandomEmail(7))
                 .gender(Gender.getRandomGender())
                 .firstName(rnd.getRandomString(6))

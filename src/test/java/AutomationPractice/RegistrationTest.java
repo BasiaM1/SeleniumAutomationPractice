@@ -15,7 +15,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class RegistrationTest extends TestBase {
 
     @Test
-    public void shouldRegisterNewUser() throws InterruptedException {
+    public void shouldRegisterNewUser()  {
         User user = new UserFactory().getRandomUser();
         homePage.getMenu()
                 .openLoginPage()
