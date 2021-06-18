@@ -26,8 +26,6 @@ public class BasePage {
         this.driver = driver;
         wt = new WaitTypes(driver);
         PageFactory.initElements(driver, this);
-
-
     }
 
 
@@ -36,7 +34,7 @@ public class BasePage {
     }
 
     public void sendKeys(WebElement element, String text) {
-        wt.waitForElement(driver,element, Integer.parseInt(System.getProperty("explicitWait")));
+        wt.waitForElement(driver,element,20);
         logger.debug("Sending text: " + text);
         element.clear();
         element.sendKeys(text);
@@ -44,7 +42,7 @@ public class BasePage {
 
     public void click(WebElement element) {
         wt.getReadyClickBtn(driver, element,15);
-        logger.debug("CLicking button: " + element.getText());
+//        logger.debug("CLicking button: " + element.getText());
         element.click();
     }
 

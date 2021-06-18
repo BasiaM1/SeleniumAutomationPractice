@@ -43,12 +43,13 @@ public class WaitTypes {
         try {
             logger.debug("Waiting for max: " + timeout + " seconds for element to be available");
 
-            WebDriverWait wait = (WebDriverWait) new FluentWait(driver)
+            FluentWait wait = new FluentWait(driver)
                     .pollingEvery(timePool, SECONDS)
                     .withTimeout(timeout, SECONDS)
                     .ignoring(NoSuchElementException.class);
 
-            element = wait.until(
+
+            element = (WebElement) wait.<WebElement>until(
                     ExpectedConditions.visibilityOf(element));
             logger.debug("Element appeared on the web page");
         } catch (Exception e) {

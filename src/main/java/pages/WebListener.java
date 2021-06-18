@@ -20,6 +20,7 @@ public class WebListener extends AbstractWebDriverEventListener {
     }
     public void beforeNavigateTo(String url, WebDriver driver) {
         logger.info(">>>>>>>>>>>>>>>>>>>Before navigate: Navigate to page: " + url +"<<<<<<<<<<<");
+   //mozna by dac tu np asercje tytulu
     }
 
     public void afterNavigateTo(String url, WebDriver driver) {

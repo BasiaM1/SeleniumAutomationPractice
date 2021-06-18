@@ -9,10 +9,8 @@ import utilities.WaitTypes;
 
 
 public class RegistrationPage extends BasePage {
-    public WaitTypes wt;
     public RegistrationPage(WebDriver driver) {
         super(driver);
-        wt = new WaitTypes(driver);
     }
 
     @FindBy(css="#id_gender1")
@@ -29,12 +27,6 @@ public class RegistrationPage extends BasePage {
 
     @FindBy(css="#passwd")
     WebElement passwordInput;
-
-//    @FindBy(css="#firstname")
-//    WebElement addrFirstNameInput;
-//
-//    @FindBy(css="#lastname")
-//    WebElement addrLastNameInput;
 
     @FindBy(css="#address1")
     WebElement addrStreetInput;
@@ -72,7 +64,6 @@ public class RegistrationPage extends BasePage {
         selectElement(addrCountrySelect, user.getCountry());
         sendKeys(addrPhoneInput, user.getPhone());
         sendKeys(addrAliasInput, user.getAlias());
-//        Thread.sleep(3000);
         if(user.getGender() == Gender.FEMALE){
             click(femaleRBtn);
         }else{
