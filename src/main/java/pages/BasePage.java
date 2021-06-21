@@ -34,14 +34,14 @@ public class BasePage {
     }
 
     public void sendKeys(WebElement element, String text) {
-        wt.waitForElement(driver,element,20);
+        wt.waitForElementFluent(driver,element,30,3);
         logger.debug("Sending text: " + text);
         element.clear();
         element.sendKeys(text);
     }
 
     public void click(WebElement element) {
-        wt.getReadyClickBtn(driver, element,15);
+        wt.getReadyClickBtn(driver, element,40);
 //        logger.debug("CLicking button: " + element.getText());
         element.click();
     }

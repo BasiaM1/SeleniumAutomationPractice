@@ -16,20 +16,23 @@ public class LoginPage extends BasePage {
         wt = new WaitTypes(driver);
     }
 
-    @FindBy(css = "#email_create")
-    WebElement emailInput;
+    @FindBy(css = ".page-heading")
+    private WebElement pageHeading;
 
-    @FindBy(css = "[name='SubmitCreate'] span")
-    WebElement createAccountBtn;
+    @FindBy(css ="#email_create")
+    private WebElement emailInput;
+
+    @FindBy(css = "[name='SubmitCreate']")
+    private WebElement createAccountBtn;
 
     @FindBy(css = "#email")
-    WebElement emailLogin;
+    private WebElement emailLogin;
 
     @FindBy(css = "#passwd")
-    WebElement passwordLogin;
+    private WebElement passwordLogin;
 
     @FindBy(css = "#SubmitLogin")
-    WebElement signInButton;
+    private WebElement signInButton;
 
     public HomePage login(User user) {
         sendKeys(emailLogin, user.getEmail());
@@ -41,9 +44,9 @@ public class LoginPage extends BasePage {
 
 
     public RegistrationPage openRegisterPage(User user) {
+        wt.waitForElementFluent(getDriver(),pageHeading,40,2);
         sendKeys(emailInput, user.getEmail());
         click(createAccountBtn);
-        wt.pageAvailable(getDriver(),15,"http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation");
         return new RegistrationPage(getDriver());
     }
 }

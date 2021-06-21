@@ -5,10 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.Duration;
 import java.util.NoSuchElementException;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
@@ -38,18 +40,16 @@ public class WaitTypes {
         return element;
     }
 
-    @SuppressWarnings("deprecation")
     public WebElement waitForElementFluent(WebDriver driver, WebElement element, int timeout, int timePool) {
         try {
             logger.debug("Waiting for max: " + timeout + " seconds for element to be available");
 
-            FluentWait wait = new FluentWait(driver)
-                    .pollingEvery(timePool, SECONDS)
-                    .withTimeout(timeout, SECONDS)
+            Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                    .pollingEvery(Duration.ofSeconds(timePool))
+                    .withTimeout(Duration.ofSeconds(timeout))
                     .ignoring(NoSuchElementException.class);
 
-
-            element = (WebElement) wait.<WebElement>until(
+            element = wait.until(
                     ExpectedConditions.visibilityOf(element));
             logger.debug("Element appeared on the web page");
         } catch (Exception e) {
@@ -62,8 +62,8 @@ public class WaitTypes {
 
         try {
             logger.debug("Waiting for max: " + timeout + " seconds for element to be available");
-
             WebDriverWait wait = new WebDriverWait(driver, timeout);
+
             element = wait.until(
                     ExpectedConditions.elementToBeClickable(element));
             logger.debug("Element clicked on the web page");
@@ -77,7 +77,7 @@ public class WaitTypes {
         try {
             logger.debug("Waiting for max: " + timeout + " seconds for page to be available");
 
-            WebDriverWait wait = new WebDriverWait(driver, 15);
+            WebDriverWait wait = new WebDriverWait(driver, timeout);
             wait.until(ExpectedConditions.urlToBe(url));
             logger.debug("page is available");
         } catch (Exception e) {
